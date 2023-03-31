@@ -6,7 +6,7 @@ This code repository (or "repo") is used as a practice repo to get comfortable w
   If on **Mac or Linux**, ensure git is present by entering 'git --verison' form your terminal. If this does not work, download git for your OS. 
 2. [Create a new SSH key for your system](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). You only need to follow the "Generating a new SSH key" and "Adding your SSH key to the ssh-agent" sections.
 3. [Add the new SSH key to your Github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-
+4. Accept the invite to the JIRA page and send Yuvakshi a message on groupme. A new taks willb added for you on the page which you can use for this demo.
 Once you have completed the above steps, you are ready to move onto a short activity.
 
 ## Activity steps:
@@ -27,21 +27,25 @@ Enter the following in your terminal:
 
 5. **Create new branch:** Now you will create your own branch to work on. For that, run `git branch your_wiscID`. Replace "your_wiscID" with  your wisd ID to create a new branch.git branch your_wiscid
 
-6. **Switch branch:** You can run `git checkout branchname` to switch to a differnt local branch. If you run `git branch` after a checkout, you should be on the different branch with th * next to the new branch now. This can help ensure that you correctly switched branches.
-git branch ot ensure branch switched
-7. **Create/Edit file:** Open your preffered text editor:
+6. **Switch branch:** You can run `git checkout branchname` to switch to a different local branch. If you run `git branch` after a checkout, you should be on the different branch with the * next to the new branch now. This can help ensure that you correctly switched branches.
+
+7. **Create/Edit file:** Open your preffered text editor byt running one of the following commands:
 - `notepad  filename.txt`: use this to open/edit file in notepad. You will need to save your changes and exit notepad to return back to your terminal
 - `vim filename.txt`: this will open you fiel in vim text editor, This editor mainly on on keyboard input. If you are not to sure how ot use it, start with notepad. If you do however get into vim, just remember  - to exit vim press 'Esc' key then type ":q" and press enter.
   Once you open and editor add a few lines to the text file, save, and exit the editor.
+  
 8. **Check your changes:** Run `git status` again to check which files have been updated. You should see your new file listed.
+
 9. **Track changes:** You need to indicate to git which changes you want to keep track of. For that run `git add filename` to track changes in your new file.
+
 10. **Ensure files added:** Run `git status` to ensure required files are added.
-11. **Commit changes:** Once you are in a state where you want to save your changes to your branch, run `git commit`. This will open up your default editor. Type your commit message, save and exit. 
-12. git config user.name username
-13. git config user.email
-14. git push
- copy past what it gives you.
-go to github to ensure that the vbranch was added to remote by branches drop down menu
-13. Create pull request: either coy paste url fromthe response. or go to github. Pull requests tab. follw the pull request msg format. follow PR steps. txt repsctive person on groupme
-14.Ta-da done.
-Now clone the SWE repsitory using the sma steps. Yous hould be all set to start woking when tasks are assigned.ls
+
+11. **Commit changes:** Once you are in a state where you want to save your changes to your branch, run `git commit`. This will open up your default editor. Type your commit message, save and exit. Ensure the commit message follws the format mentioned on the ECE repository's home page. You can find the Jira number by accessing .
+
+12. **Set up identity:** Git needs to know who is pushing to a shared repository. To setup this configuration run git `config user.name username` and `git config user.email email`. Replace  username and email with your details that are linked to your github account.
+
+13. **Share your changes:** When you are ready to share your changes wiht everyone, you will push your changes to the remote branch. For this run `git push`.  This will prompt you to setup an upstrteam branch. Just copy and run the command the prompt gives you. You can go to the repository's code page, click on the branches drop down to ensure your local branch was added to the remote and your changes are in the remote repository.
+
+14. **Create pull request:** Once your changes are pushed, we want ot get them peer reviewed and added to the  main code. This can be done by creating a Pull request. On the repository's hime page you can see a Pull Requests tab. Click on that and then click in the new pull request option. The base branch will be whatever you want to merge to (in this case main) adn the compare branch is your branch with the new changes. For the purposes of this demo add Yuvakshi as the reviewer. In other cases add your team lead (Riya or Megan) and Yuvakshi as reviewers. If you want anyone else to review your code feel free to add them as well. Once your code gets approved, it can be merged to the main. [For this activity, please sned Yuvakshi a groupme DM as soon as you complete the activity so your PR can be approved ASAP]
+
+15. Yay! You made your first changes to a shared repository. Most of what you will be doing to make changes and share your code in git follows these steps.
