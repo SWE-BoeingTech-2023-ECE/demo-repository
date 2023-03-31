@@ -22,6 +22,7 @@ Enter the following in your terminal:
   `cd demo-repository`: This allows you to enter the repository directory.
 
 3. **Check git status:** This command allows you to check the current status of your git branch. Run `git status` If you have not made any changes, you should see something like this: 
+![branch clean message](/gitallok.png)
 
 4. **List branches:** To allow different users to work on different parts of code concurrently, git offers branches. To list the branches in your local repo, run `git branch`. Your current branch will be highlighted with a * next to it. By default, the branch you are on in the main branch. To view the branches in the remote repo run `git branch --remote`
 
